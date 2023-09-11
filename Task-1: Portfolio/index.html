@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal profile website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <section class="hero">
+        <div class="main-width">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                </div>
+                <nav>
+                    <div class="hamb">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Works</a></li>
+                        <li><a href="#contact">Contact me</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-text">
+                    <h3>Hey, there!</h3>
+                    <h1>I am,</h1>
+                    <h1><span class="input"></span></h1>
+                    <div class="social">
+                        <a href="https://www.facebook.com/anirvan.pandey/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/PandeyAnirvan"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/anirvan.pandey_02/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anirvan-pandey-6b2b9a219/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="button">
+                        <a href="background/myResume.pdf" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".input",{
+            strings:["Anirvan Pandey. . ."," A Graphic designer. . .","A Web developer. . ."],
+            typeSpeed: 70,
+            backSpeed: 60,
+            loop:true
+        });
+    </script>
+
+    <div id="about">
+        <div class="contain">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>Greetings!</p>
+                <p>Myself Anirvan Pandey, I'm a 3rd year undergraduate pursuing B.tech in Computer Science and Engineering with specialization in 
+                Blockchain Technology from Vellore Institute of Technology, Vellore. I'm a passionate and creative individual with a deep love 
+                for crafting digital experiences.</p>
+                <p>Programming is more than a skill; it's a mindset that fuels innovation. I take pride in creating functional and efficient code.
+                I have honed my expertise in turning ideas into interactive websites. Proficient in Front-end web development.</p>
+                <p>My creative journey extends to the world of visual storytelling. Armed with an artistic eye and proficiency in Graphic designing.</p>
+                <p>In a world where technology and design converge, I'm open to new adventures. So, let's connect and see what awesome projects 
+                we can collaborate on!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="skills-section">
+            <h4>My Skills</h4>
+            <div class="skill-box-container">
+                <div class="skill-box-left">
+                    <h5>Web Development</h5>
+                    <p>Skilled and proficient in front-end web development, encompassing HTML, CSS and JavaScript. Along with an experience in 
+                    JavaScript frameworks like React.js.</p>
+                </div>
+                <div class="skill-box-middle">
+                    <h5>Graphic Designing</h5>
+                    <p>Skilled and proficient in tools like Adobe Illustrator and Canva. Additionally, I enjoy to explore the world of 3D modeling using 
+                    Autodesk Maya. </p>
+                </div>
+                <div class="skill-box-right">
+                    <h5>Programming</h5>
+                    <p>Skilled and proficient in a variety of programming languages including Java, C/C++ and Python, with substantial hands-on experience 
+                    in each.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="projects">
+            <h1>My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="background/pygame2.png">
+                    <div class="layer">
+                        <h3>Space Shooter 2D</h3>
+                        <p>This is a simple 2D space shooter game using python with the help
+                            of pygame library. Click to view project in github</p>
+                        <a href="https://github.com/Anirvan02/SpaceShooter_2D"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="background/speech.png">
+                    <div class="layer">
+                        <h3>Speech to text converter</h3>
+                        <p>A simple speech to text converter done with the help 
+                            of rect.js. Click to view project in github</p>
+                        <a href="https://github.com/Anirvan02/React_applications"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="background/shopping.png">
+                    <div class="layer">
+                        <h3>Shopping cart</h3>
+                        <p>A beginner and user friendly shopping cart website
+                            where you can add items and remove from the cart. Click on to view project in github</p>
+                        <a href="https://github.com/Anirvan02/Shopping_cart"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="main-width">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fas fa-paper-plane"></i> Email - pandeyanirvan02@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> Phone - 7477582909</p>
+                </div>
+                <div class="contact-right">
+                    <form name="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbzWW1tWYdW3KmLfLUSo3qHbwaL3KbHWhggew6A90wBrSRO3efOW2-Zd2_ClKwf4lYEW/exec">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea type="message" name="Message" rows="10" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzWW1tWYdW3KmLfLUSo3qHbwaL3KbHWhggew6A90wBrSRO3efOW2-Zd2_ClKwf4lYEW/exec'
+                const form = document.forms['contact-form']
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => alert("Thank you! your form is submitted successfully." ))
+                    .then(() => { window.location.reload(); })
+                    .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Anirvan Pandey</p>
+        </div>
+    </div>
+    
+</body>
+</html>
