@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../bg/bground.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 256px;
+    text-align: center;
+    padding: 10px;
+    background: #dddddd;
+    border-radius: 10px;
+    border: 5px solid #aeaeae;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+}
+
+input[type = "text"] {
+    margin: 5px;
+    height: 65px;
+    width: 240px;
+    background-color: #373737;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+#clear {
+    grid-column: 1/3;
+    grid-row: 1;
+    color: #ffffff;
+    background: #1400ac
+}
+
+#equals {
+    grid-column: 3/5;
+    grid-row: 5;
+    color: #ffffff;
+    background: #1400ab
+}
+
+#backspace {
+    color: #ffffff;
+    background: #1400ab
+}
+
+button {
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #484b5f;
+    color: #fff;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.highlight {
+    color: #ffffff;
+    background: #1400ab
+}
