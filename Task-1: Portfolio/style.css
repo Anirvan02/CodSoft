@@ -196,6 +196,7 @@ span{
         right: 0;
     }
 }
+
 /*---------about me---------*/
 .contain {
     display: flex;
@@ -206,9 +207,8 @@ span{
     height: 100%;
     width: 100%;
     min-height: 90vh;
-    justify-content: flex-end; /* This aligns the content to the right */
+    justify-content: flex-end; 
 }
-
 .about-me {
     max-width: 1280px;
     height: 100%;
@@ -222,23 +222,20 @@ span{
     background-color: #262626;
     border-radius: 10px;
 }
-
 .about-me h2 {
     font-size: 47px;
     margin-bottom: 10px;
 }
-
 .about-me p {
     margin-top: 20px;
     font-size: 18px;
     line-height: 1.5;
 }
 
-/* Additional styling (customize as needed) */
+/* Additional styling */
 .about-me p:last-child {
     margin-bottom: 0;
 }
-
 .about-me h2::after {
     content: "";
     display: block;
@@ -247,20 +244,12 @@ span{
     background-color: #3947d7;
     margin-top: 10px;
 }
-
 .about-me:hover {
     background-color: #3947d7;
     transition: .4s;
 }
-
 .about-me:hover h2::after {
     background-color: #000000;
-}
-
-@media (max-width: 768px) {
-    .about-me {
-        max-width: 90%;
-    }
 }
 
 /*---------skills-----------*/
@@ -276,71 +265,33 @@ span{
     color: #fff;
     max-width: 1280px;
     margin: 50px auto;
-  }
-
+}
 .skills-section h4 {
     font-size: 47px;
     margin-bottom: 20px;
     margin-right: 100px;
-  }
-
-  .skill-box-container {
+}
+.skill-box-container {
     display: flex;
     justify-content: space-around;
 }
-
-  .skill-box-left {
+.skill-box {
     width: 30%;
     background-color: #262626;
     padding: 25px;
     border-radius: 10px;
     text-align: center;
-  }
-  .skill-box-middle {
-    width: 30%;
-    background-color: #262626;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  .skill-box-right {
-    width: 30%;
-    background-color: #262626;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-  }
-
-  .skill-box-left h5 {
+}
+.skill-box h5 {
     font-size: 30px;
     margin-bottom: 10px;
-  }
-  .skill-box-middle h5 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  .skill-box-right h5 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-
-  .skill-box-left p {
+}
+.skill-box p {
     font-size: 16px;
     color: #ffffff;
     margin-top: 20px;
-  }
-  .skill-box-middle p {
-    font-size: 16px;
-    color: #ffffff;
-    margin-top: 20px;
-  }
-  .skill-box-right p {
-    font-size: 16px;
-    color: #ffffff;
-    margin-top: 20px;
-  }
-
-  .skills-section h4::after {
+}
+.skills-section h4::after {
     content: "";
     display: block;
     width: 100px;
@@ -348,61 +299,24 @@ span{
     background-color: #3947d7;
     margin-top: 10px;
     margin-bottom: 50px;
-  }
-  .skill-box-left h5::after {
-    content: "";
-    display: block;
-    width: 150px;
-    height: 3px;
-    background-color: #3947d7;
-    margin-top: 10px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .skill-box-middle h5::after {
-    content: "";
-    display: block;
-    width: 150px;
-    height: 3px;
-    background-color: #3947d7;
-    margin-top: 10px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .skill-box-right h5::after {
-    content: "";
-    display: block;
-    width: 150px;
-    height: 3px;
-    background-color: #3947d7;
-    margin-top: 10px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-.skill-box-left:hover {
-    background-color: #3947d7;
-    transition: .4s;
 }
-.skill-box-middle:hover {
+.skill-box h5::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
     background-color: #3947d7;
-    transition: .4s;
+    margin-top: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.skill-box-right:hover {
+.skill-box:hover {
     background-color: #3947d7;
     transition: .4s;
 }
 
-.skill-box-left:hover h5::after {
-    background-color: #000000;
-}
-.skill-box-middle:hover h5::after {
-    background-color: #000000;
-}
-.skill-box-right:hover h5::after {
+.skill-box:hover h5::after {
     background-color: #000000;
 }
 
@@ -420,7 +334,6 @@ span{
     max-width: 1280px;
     margin: 50px auto;
 }
-
 .projects h1{
     font-size: 47px;
     margin-bottom: 20px;
@@ -434,7 +347,7 @@ span{
     background-color: #3947d7;
     margin-top: 10px;
     margin-bottom: 50px;
-  }
+}
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -475,7 +388,6 @@ span{
     font-size: 20px;
     margin-bottom: 20px;
 }
-
 .layer a{
     margin-top: 20px;
     color: #3947d7;
@@ -488,7 +400,6 @@ span{
     border-radius: 50%;
     text-align: center;
 }
-
 .work:hover .layer{
     height: 100%;
 }
