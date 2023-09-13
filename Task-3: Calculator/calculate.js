@@ -17,9 +17,30 @@ function appendToInput(value) {
 
 function calculate() {
     try {
-        const result = eval(currentInput);
+        let result;
+        if (currentInput.includes('+')) {
+            const operands = currentInput.split('+');
+            if (operands.length === 2) {
+                result = parseFloat(operands[0]) + parseFloat(operands[1]);
+            }
+        } else if (currentInput.includes('-')) {
+            const operands = currentInput.split('-');
+            if (operands.length === 2) {
+                result = parseFloat(operands[0]) - parseFloat(operands[1]);
+            }
+        } else if (currentInput.includes('*')) {
+            const operands = currentInput.split('*');
+            if (operands.length === 2) {
+                result = parseFloat(operands[0]) * parseFloat(operands[1]);
+            }
+        } else if (currentInput.includes('/')) {
+            const operands = currentInput.split('/');
+            if (operands.length === 2) {
+                result = parseFloat(operands[0]) / parseFloat(operands[1]);
+            }
+        }
         if (typeof result === 'number' && !isNaN(result)) {
-            const resultWithTwoDecimals = result.toFixed(2);
+            const resultWithTwoDecimals = result.toFixed(1);
             document.getElementById("result").value = resultWithTwoDecimals;
             currentInput = resultWithTwoDecimals;
         } else {
