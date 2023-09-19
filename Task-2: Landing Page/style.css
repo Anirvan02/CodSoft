@@ -171,6 +171,9 @@ html{
   margin-left: 15px;
   margin-bottom: 20px;
 }
+.abt-image img:hover{
+  transform: scale(1.03);
+}
 .abt-content {
   padding: 20px 50px ;
   background-color: #ebb41d4e;
