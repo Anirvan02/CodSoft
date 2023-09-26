@@ -17,32 +17,11 @@ function appendToInput(value) {
 
 function calculate() {
     try {
-        let result;
-        if (currentInput.includes('+')) {
-            const operands = currentInput.split('+');
-            if (operands.length === 2) {
-                result = parseFloat(operands[0]) + parseFloat(operands[1]);
-            }
-        } else if (currentInput.includes('-')) {
-            const operands = currentInput.split('-');
-            if (operands.length === 2) {
-                result = parseFloat(operands[0]) - parseFloat(operands[1]);
-            }
-        } else if (currentInput.includes('*')) {
-            const operands = currentInput.split('*');
-            if (operands.length === 2) {
-                result = parseFloat(operands[0]) * parseFloat(operands[1]);
-            }
-        } else if (currentInput.includes('/')) {
-            const operands = currentInput.split('/');
-            if (operands.length === 2) {
-                result = parseFloat(operands[0]) / parseFloat(operands[1]);
-            }
-        }
+        let result = eval(currentInput);
         if (typeof result === 'number' && !isNaN(result)) {
-            const resultWithTwoDecimals = result.toFixed(1);
-            document.getElementById("result").value = resultWithTwoDecimals;
-            currentInput = resultWithTwoDecimals;
+            const res = result.toFixed(1);
+            document.getElementById("result").value = res;
+            currentInput = res;
         } else {
             document.getElementById("result").value = "Error";
             currentInput = "";
